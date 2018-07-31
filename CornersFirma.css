@@ -8,6 +8,7 @@
 }
 .LKM {
  width: fit-content;
+ width: -moz-fit-content;
  margin: auto;
  position: relative;
  border: 1px solid;
