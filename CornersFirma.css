@@ -1,0 +1,56 @@
+@font-face {
+ font-family: 'Siesta';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/2800fce9/Siesta.ttf');
+}
+@font-face {
+ font-family: 'Futurist';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/968f84e5/FUTRFW.TTF');
+}
+.LKM {
+ width: fit-content;
+ margin: auto;
+ position: relative;
+ border: 1px solid;
+ padding: 3px;
+}
+.LKM:before, .LKM:after {
+ content: "";
+ position: absolute;
+ height: calc(100% + 10px);
+ border-top: 50px solid;
+ border-bottom: 50px solid;
+ width: 50px;
+ top: -5px;
+}
+.LKM:before {
+ left: -5px;
+}
+.LKM:after {
+ right: -5px;
+}
+.LKM img {
+ position: relative;
+ z-index: 50;
+}
+.LKM name {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%)translateY(-50%);
+ z-index: 100;
+ font: 50px Siesta;
+ text-rendering: optimizeLegibility;
+ text-align: center;
+}
+.LKM name b {
+ display: block;
+ font: 14px Futurist;
+ padding: 2px 7px 5px 13px;
+ margin: -20px 0 0;
+ letter-spacing: 5px;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
