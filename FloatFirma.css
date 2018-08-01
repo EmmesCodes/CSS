@@ -67,3 +67,8 @@
  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
  float: left;
 }
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
