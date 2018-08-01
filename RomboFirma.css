@@ -1,0 +1,55 @@
+@font-face {
+ font-family: 'Riesling';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/69ede8b0/riesling.ttf');
+}
+@font-face {
+ font-family: 'Sansation';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/012966ae/Sansation_Regular.ttf');
+}
+.VFM {
+ border: 1px solid;
+ width: fit-content;
+ width: -moz-fit-content;
+ margin: auto;
+ position: relative;
+}
+.VFM:before, .VFM:after, .VFM name {
+content: "";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%)translateY(-50%);
+}
+.VFM:before {
+ border-left: 1px solid;
+ height: 100%; 
+}
+.VFM:after {
+ border: 60px solid;
+ opacity: .8;
+ transform: translateX(-50%)translateY(-50%)rotate(45deg);
+}
+.VFM img {
+ width: 180px;
+ height: 130px;
+ margin: 2px;
+ border: 2px solid;
+}
+.mm {
+font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
+.VFM name {
+ font: 35px/18px Riesling;
+ z-index: 100;
+ display: block;
+ text-align: center;
+ width: 100%;
+ letter-spacing: 2px;
+ padding-top: 20px;
+}
+.VFM name b {
+ font: normal 10px Sansation;
+ display: block;
+}
