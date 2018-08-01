@@ -25,9 +25,10 @@ content: "";
  height: 100%; 
 }
 .VFM:after {
- border: 60px solid;
+ border: 40px solid;
  opacity: .8;
  transform: translateX(-50%)translateY(-50%)rotate(45deg);
+ box-shadow: 5px 2px 5px #0000009c;
 }
 .VFM img {
  width: 180px;
