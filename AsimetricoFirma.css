@@ -1,0 +1,47 @@
+@font-face {
+ font-family: 'Caviar Dreams';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/b8b65c85/CaviarDreams.ttf');
+}
+.UYM {
+ width: fit-content;
+ width: -moz-fit-content;
+ margin: auto;
+ position: relative;
+}
+.UYM img {
+ margin: 20px;
+ position: relative;
+ border: 1px dashed;
+ padding: 3px;
+}
+.UYM div, .UYM name i {
+ position: absolute;
+ width: 50%;
+ height: 100%;
+ display: block; 
+}
+.UYM name {
+ position: absolute;
+ display: block;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%)translateY(-50%);
+ width: fit-content;
+ width: -moz-fit-content;
+ border: 1px dashed;
+ padding: 3px 5px;
+}
+.UYM name i {
+right: 3px; 
+ height: calc(100% - 6px);
+}
+.UYM name b {
+ font: normal 15px Caviar Dreams;
+ position: relative;
+ letter-spacing: 2px;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
