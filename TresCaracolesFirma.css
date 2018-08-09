@@ -68,3 +68,11 @@ z-index: 100;
  border-bottom: 1px solid;
  width: 220px;
 }
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
+.mm:hover {
+ letter-spacing: 5px;
+}
