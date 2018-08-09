@@ -1,0 +1,70 @@
+@font-face {
+ font-family: 'Steelfish';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/2f72e2c0/steelfish%20rg.ttf');
+}
+.ABM {
+ width: 400px;
+ height: 200px;
+ position: relative;
+ margin: auto;
+}
+.ABM * {
+ transition: .5s;
+ transition-timing-function: cubic-bezier(0.25, 0.1, 0.5, 3) !important;
+}
+.ABM a {
+ position: absolute;
+ top: 50%;
+ display: block;
+ transform: translateX(-50%)translateY(-50%);
+ width: fit-content;
+ width: -moz-fit-content;
+}
+.ABM a:nth-of-type(1) {
+ left: 15%;
+}
+.ABM a:nth-of-type(2) {
+ left: 50%;
+}
+.ABM a:nth-of-type(3) {
+ left: 85%;
+}
+.ABM a:nth-of-type(1) img, .ABM a:nth-of-type(3) img {
+ width: 100px;
+ height: 100px;
+}
+.ABM a:nth-of-type(2) img {
+ width: 150px;
+ height: 150px;
+}
+.ABM a img {
+ border: 2px dashed;
+ padding: 3px;
+ border-radius: 50%;
+ box-shadow: 2px 2px 5px 3px #0009;
+}
+.ABM a:hover img {
+ width: 200px;
+ height: 200px;
+}
+.ABM a:hover {
+z-index: 100;
+}
+.ABM a i {
+ top: 50%;
+ position: absolute;
+ display: block;
+ transform: translateX(-50%)translateY(-50%);
+ left: 50%;
+ width: 0px;
+ text-align: center;
+ border-top: 0px solid;
+ border-bottom: 0px solid;
+ font: 0px Steelfish;
+}
+.ABM a:hover i {
+ font: 30px Steelfish;
+ border-top: 1px solid;
+ border-bottom: 1px solid;
+ width: 220px;
+}
