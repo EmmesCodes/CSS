@@ -1,0 +1,85 @@
+@font-face {
+ font-family: 'Blomband';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/3dc6aefc/Blomband-Script.otf');
+}
+@font-face {
+ font-family: 'Futura Bk BT';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/b565ce5b/FuturaBookBT.ttf');
+}
+.NHM {
+ width: 350px;
+ height: 265px;
+ margin: auto;
+ position: relative;
+ overflow: hidden;
+}
+.NHM, .NHM * {
+ transition: 1s;
+ box-sizing: border-box;
+}
+.NHM img {
+ position: absolute;
+ top: 40px;
+ left: 0%;
+}
+.NHM img:nth-of-type(2) {
+ left: 100%;
+}
+.NHM:hover img:nth-of-type(1) {
+ left: -100%;
+}
+.NHM:hover img:nth-of-type(2) {
+ left: 0%;
+}
+.NHM b {
+ font: bold 25px/0px Futura Bk BT;
+ border-left: 200px solid;
+ border-right: 200px solid;
+ height: 2px;
+ display: block;
+ position: absolute;
+ width: max-content;
+ width: -moz-max-content;
+ top: 25px;
+ left: 50%;
+ transform: translateX(-50%);
+ padding: 0 10px;
+}
+.NHM i {
+ display: block;
+ position: absolute;
+ top: 223px;
+ padding: 5px;
+ font: 8px arial;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+}
+.NHM div {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ right: 5px;
+ text-align: right;
+}
+.NHM div a {
+ font: 0px Futura Bk BT;
+ border-radius: 10px;
+ padding: 5px;
+ box-shadow: 2px 2px 2px #0000006e;
+ display: inline-block;
+ margin: 6px 0px;
+ transition: .5s;
+}
+.NHM div a:hover {
+ font: 12px Futura Bk BT;
+ color: #FFF;
+ margin: 0px 0px;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
+.mm:hover {
+ letter-spacing: 5px;
+}
