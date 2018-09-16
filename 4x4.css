@@ -1,0 +1,100 @@
+@font-face {
+ font-family: 'Siesta';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/2800fce9/Siesta.ttf');
+}
+@font-face {
+ font-family: 'Futurist';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/968f84e5/FUTRFW.TTF');
+}
+.LKM, .LKM * {
+ box-sizing: border-box;
+ transition: .5s;
+ text-rendering: optimizeLegibility;
+}
+.LKM {
+ width: fit-content;
+ width: -moz-fit-content;
+ margin: auto;
+ position: relative;
+ border: 1px solid;
+ padding: 3px;
+}
+.LKM:before, .LKM:after {
+ content: "";
+ position: absolute;
+ height: calc(100% + 10px);
+ border-top: 50px solid;
+ border-bottom: 50px solid;
+ width: 50px;
+ top: -5px;
+ box-sizing: border-box;
+ transition: .5s;
+}
+.LKM:before {
+ left: -5px;
+}
+.LKM:after {
+ right: -5px;
+}
+.LKM:hover:before, .LKM:hover:after {
+  margin: -45px;
+  height: calc(100% + 100px);
+  opacity: 0;
+}
+.LKM img {
+ position: relative;
+ z-index: 50;
+}
+.LKM tit {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%)translateY(-50%);
+ z-index: 100;
+ width: 70%;
+}
+.LKM name {
+ font: 50px/40px Siesta;
+ position: relative;
+ top: 0px;
+ width: fit-content;
+ width: -moz-fit-content;
+ left: 50%;
+ transform: translateX(-50%);
+ display: block;
+}
+.LKM sub {
+ display: block;
+ font: 14px Futurist;
+ letter-spacing: 5px;
+ position: relative;
+ bottom: 0px;
+ left: 50%;
+ transform: translateX(-50%);
+ padding: 3px 0 5px 5px;
+ width: fit-content;
+ width: -moz-fit-content;
+}
+.LKM:hover name {
+top: 0%;
+}
+.LKM:hover sub {
+top: calc(100% - 38px);
+}
+.LKM span {
+ position: relative;
+ font: 0px arial;
+ text-align: justify;
+ display: block;
+}
+.LKM:hover span {
+ font: 12px arial;
+ padding: 10px;
+ width: 100%;
+ margin: 5px 0;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
