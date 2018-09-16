@@ -1,0 +1,76 @@
+@font-face {
+ font-family: 'Cute Heart';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/d50777d1/Cute_Heart_Font.ttf');
+}
+@font-face {
+ font-family: 'Sketch Icons';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/9bd808eb/SketchIconsbold.ttf');
+}
+.EDM {
+ border: 3px solid;
+ padding: 5px;
+ width: max-content;
+ width: -moz-max-content;
+ margin: auto;
+ position: relative;
+}
+.EDM, .EDM * {
+ box-sizing: border-box;
+ transition: .5s;
+}
+.EDM div {
+ position: absolute;
+ padding: 15px 15px 10px;
+ border-radius: 20px;
+ text-align: center;
+ bottom: calc(100% - 30px);
+ right: -10px;
+ width: 50px;
+ transform: rotate(30deg);
+ font: 20px/30px Cute Heart;
+}
+.EDM:hover div {
+ right: 0;
+ width: 100%;
+ bottom: calc(100% + 15px);
+ font: 20px/20px Cute Heart;
+ transform: rotate(0deg);
+ padding: 15px 15px 0px;
+}
+.EDM div m {
+ border-top: 10px solid;
+ width: 20px;
+ position: absolute;
+ top: calc(100% - 1px);
+ left: 50%;
+ border-left: 10px solid transparent;
+ border-right: 10px solid transparent;
+ transform: translateX(-50%);
+}
+.EDM div i {
+ font-size: 0px;
+}
+.EDM:hover div i {
+font-size: 20px;
+}
+.EDM div a {
+ font: 0px Sketch Icons;
+}
+.EDM:hover div a {
+ font: 30px/50px Sketch Icons;
+ padding: 5px;
+ color: #FFF;
+ opacity: .8;
+ vertical-align: middle;
+ 
+}
+.EDM:hover div a:hover {
+ font: 40px/50px Sketch Icons;
+ opacity: 1;
+ margin: -5px;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
