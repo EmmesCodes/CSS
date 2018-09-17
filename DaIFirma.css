@@ -1,0 +1,121 @@
+@font-face {
+ font-family: 'Steelfish';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/f40eaf3a/steelfish%20rg.ttf');
+}
+.NJM, .NJM * {
+ box-sizing: border-box;
+transition: 1s;
+}
+.NJM {
+ border: 1px dashed;
+ width: -moz-fit-content;
+ margin: 0 auto 10px;
+ position: relative;
+ padding: 3px;
+ background: #FFF9;
+ box-shadow: 0 0 0 10px #FFF9;
+}
+.NJM img:nth-of-type(2){
+ position: absolute;
+ width: 130px;
+ height: 130px;
+ border: 1px dashed;
+ padding: 3px;
+ background: #FFF9;
+ box-shadow: 0 0 0 3px #FFF9;
+ left: 0%;
+ top: 50%;
+ transform: translateX(-50%)translateY(-50%);
+ transition-delay: .8s !important;
+}
+.NJM div:nth-of-type(1) {
+ position: absolute;
+ width: calc(100% - 30px);
+ top: 45%;
+ left: 68px;
+ transition-delay: .8s !important;
+ height: 65px;
+ overflow: hidden;
+ box-shadow: 2px 2px 5px #1113;
+}
+.NJM name {
+ font: 25px Steelfish;
+ display: block;
+ padding: 5px 3px 0;
+}
+.NJM sub { 
+ font: 10px arial;
+ display: block;
+ padding: 3px;
+}
+.NJM:hover img:nth-of-type(2){
+ left: 100%;
+ transition-delay: 0s !important;
+}
+.NJM:hover div:nth-of-type(1) {
+ left: calc(100% + 70px);
+ width: 0px;
+ opacity: 0;
+ transition-delay: 0s !important;
+}
+.NJM div:nth-of-type(2) {
+ position: absolute;
+ top: 50%;
+ left: -65px;
+ transform: translateY(-50%);
+ width: 0px;
+ overflow: hidden;
+ transition-delay: .8s !important;
+}
+.NJM:hover div:nth-of-type(2) {
+ width: 150px;
+ transition-delay: 0s !important;
+}
+.NJM div:nth-of-type(2) a {
+ border: 1px dashed;
+ font: 0px/10px arial;
+ height: 18px;
+ width: 0px;
+ margin: 5px 5px;
+ padding: 2px 0px;
+ display: inline-block; 
+ text-transform: uppercase;
+ opacity: 0;
+}
+.NJM:hover div:nth-of-type(2) a { 
+ font: 10px/10px arial;
+ width: 120px;
+ padding: 2px 5px;
+ transition: .2s;
+ opacity: 1;
+}
+.NJM div:nth-of-type(2) a:hover {
+ width: 140px;
+ letter-spacing: 2px;
+ filter: contrast(2);
+ transition-delay: 0s !important;
+}
+.NJM div:nth-of-type(2) a:nth-of-type(1n) {
+ transition-delay: 0s;
+}
+.NJM div:nth-of-type(2) a:nth-of-type(2n) {
+ transition-delay: .2s;
+}
+.NJM div:nth-of-type(2) a:nth-of-type(3n) {
+ transition-delay: .4s;
+}
+.NJM div:nth-of-type(2) a:nth-of-type(4n) {
+ transition-delay: .6s;
+}
+.NJM div:nth-of-type(2) a:nth-of-type(5n) {
+ transition-delay: .8s;
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+ position: relative;
+}
+.mm:hover {
+ letter-spacing: 5px;
+}
