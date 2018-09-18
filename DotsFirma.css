@@ -54,7 +54,7 @@
  width: 80px;
  height: 80px;
  border: 20px solid;
- top: calc(50% - 30px);
+ top: calc(50% - 40px);
  left: -300px;
 }
 .NAS:hover:after, .NAS:hover:before, .NAS:hover name:after, .NAS:hover name:before {
