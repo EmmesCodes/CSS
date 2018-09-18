@@ -1,0 +1,84 @@
+@font-face {
+ font-family: 'Caviar';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/51f35cd8/CaviarDreams.ttf');
+}
+@font-face {
+ font-family: 'Visitor';
+ src: url('https://cdn.rawgit.com/EmmesCodes/Tipografias/0c4fecd4/visitor2.ttf');
+}
+.MOT, .MOT * {
+  box-sizing: border-box;
+}
+.MOT {
+ width: -moz-fit-content;
+ width: fit-content;
+ position: relative;
+ margin: 20px auto;
+}
+.MOT, .MOT * {
+ box-sizing: border-box;
+ transition: .5s;
+}
+.aMOT {
+ overflow: hidden;
+ position: relative;
+ border-style: solid;
+ border-width: 5px 30px;
+}
+.aMOT div, .aMOT::before, .aMOT::after {
+ content: "";
+ border: 100px solid;
+ border-radius: 50%;
+ position: absolute;
+ bottom: 50%;
+ transform: translateY(50%)translateX(-50%);
+ left: 50%;
+ filter: blur(20px);
+ animation: giro 5s linear infinite;
+ height: 500px;
+   box-sizing: border-box;
+}
+.aMOT::before {
+ width: 560px;
+ color: #ff29ff;
+ animation-delay: 1s;
+}
+.aMOT::after {
+ width: 550px;
+ color: #0bffff;
+ animation-delay: 3s;
+}
+.aMOT div {
+ width: 530px;
+ color: #ffff18;
+}
+.MOT span {
+ text-align: center;
+ letter-spacing: 2px;
+ font: bold 20px Caviar;
+ display: block;
+}
+.lMOT {
+ width: 100%;
+ display: inline;
+ font: 12px/8px Visitor;
+ text-align: justify;
+ clear: both;
+ position: absolute;
+}
+@keyframes giro {
+ 0% {
+ transform: translateY(50%)translateX(-50%)rotate(0deg);
+ }
+ 100% {
+ transform: translateY(50%)translateX(-50%)rotate(360deg);
+ }
+}
+.mm {
+ font: 8px/15px arial !important;
+ display: block;
+ text-align: center;
+}
+.mm:hover {
+ letter-spacing: 5px;
+}
