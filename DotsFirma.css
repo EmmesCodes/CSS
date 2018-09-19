@@ -70,7 +70,7 @@
  top: 50%;
  width: calc(70px);
  text-align: center;
- transform: translateY(-50%)translateX(-50%);
+ transform: translateY(-50%)translateX(-50%)rotate(0deg);
  left: 100%;
  height: calc(70px);
  border-radius: 50%;
