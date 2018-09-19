@@ -9,6 +9,7 @@ transition: 1s;
 .NJM {
  border: 1px dashed;
  width: -moz-fit-content;
+ width: fit-content;
  margin: 0 auto 10px;
  position: relative;
  padding: 3px;
