@@ -1,0 +1,65 @@
+/*******Despedidas Chat********/
+.msg span[style*="red"] strong::after{
+ margin-left: 5px;
+}
+p[class*=chatbox_row]:nth-of-type(odd) .msg span[style*="red"] strong::after{
+ content:" - ¡Que la fuerza le acompañe!";
+}
+p[class*=chatbox_row]:nth-of-type(even) .msg span[style*="red"] strong::after{
+ content:" - Hasta la vista, baby.";
+}
+p[class*=chatbox_row]:nth-of-type(3n) .msg span[style*="red"] strong::after{
+ content:" - You require more vespene gas.";
+}
+p[class*=chatbox_row]:nth-of-type(4n) .msg span[style*="red"] strong::after{
+ content:" - FINISH HIM!!!";
+}
+p[class*=chatbox_row]:nth-of-type(5n) .msg span[style*="red"] strong::after{
+ content:" - It’s not very effective…";
+}
+p[class*=chatbox_row]:nth-of-type(6n) .msg span[style*="red"] strong::after{
+ content:" - ¡Al infinito y más allá!";
+}
+p[class*=chatbox_row]:nth-of-type(7n) .msg span[style*="red"] strong::after{
+ content:" - YOU SHALL NOT PASS!";
+}
+p[class*=chatbox_row]:nth-of-type(8n) .msg span[style*="red"] strong::after{
+ content:" - ¡Nos veremos en el infierno!";
+}
+p[class*=chatbox_row]:nth-of-type(9n) .msg span[style*="red"] strong::after{
+ content:" - It's a trap!!";
+}
+p[class*=chatbox_row]:nth-of-type(10n) .msg span[style*="red"] strong::after{
+ content:" - Larga vida y prosperidad.";
+}
+/*******Saludos Chat********/
+p[class*=chatbox_row]:nth-of-type(odd) .msg span[style*="green"] strong::after{
+content:" - ¡Los que van a morir te saludan!";
+}
+p[class*=chatbox_row]:nth-of-type(even) .msg span[style*="green"] strong::after{
+ content:" - ¡Quietos todos! Si no nos movemos no nos verá.";
+}
+p[class*=chatbox_row]:nth-of-type(3n) .msg span[style*="green"] strong::after{
+ content:" - ¡Un personaje salvaje ha aparecido!";
+}
+p[class*=chatbox_row]:nth-of-type(4n) .msg span[style*="green"] strong::after{
+ content:" - ¡En taro Adun, Ejecutor!";
+}
+p[class*=chatbox_row]:nth-of-type(5n) .msg span[style*="green"] strong::after{
+ content:" - IT'S ALIVE!";
+}
+p[class*=chatbox_row]:nth-of-type(6n) .msg span[style*="green"] strong::after{
+ content:" - Houston, we have a problem...";
+}
+p[class*=chatbox_row]:nth-of-type(7n) .msg span[style*="green"] strong::after{
+ content:" - HULK SMASH!";
+}
+p[class*=chatbox_row]:nth-of-type(8n) .msg span[style*="green"] strong::after{
+ content:" - Veo gente muerta...";
+}
+p[class*=chatbox_row]:nth-of-type(9n) .msg span[style*="green"] strong::after{
+ content:" - Te haré una propuesta que no podrás rechazar...";
+}
+p[class*=chatbox_row]:nth-of-type(10n) .msg span[style*="green"] strong::after{
+ content:" - Winter is coming.";
+}
