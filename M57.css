@@ -1,3 +1,6 @@
+.M57, .M57 * {
+  box-sizing: border-box;
+}
 .M57 {
  margin: auto;
  position: relative;
@@ -18,6 +21,7 @@ transform-style: preserve-3d;
  border: 3px solid;
  position: absolute;
  border-radius: 50%;
+ box-sizing: border-box;
 }
 .inM57::before {
  top: 142px;
