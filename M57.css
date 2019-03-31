@@ -1,0 +1,72 @@
+.M57 {
+ margin: auto;
+ position: relative;
+ perspective: 800px;
+transform-style: preserve-3d;
+}
+.inM57 {
+ width: 200px;
+ border: 1px solid;
+ padding: 20px;
+ border-radius: 50%;
+ height: 200px;
+ position: relative;
+ clip-path: polygon(0px 0px, 0% 76.4%, 27px 72.50%, 25.91% 85.86%, 28.25% 100%, 100% 100%, 100% 0px);
+}
+.inM57::before, .inM57::after {
+ content: "";
+ border: 3px solid;
+ position: absolute;
+ border-radius: 50%;
+}
+.inM57::before {
+ top: 142px;
+ left: 8px;
+}
+.inM57::after {
+ bottom: 7px;
+ left: 54px;
+}
+.inM57 img {
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+ transition: 1s;
+}
+.inM57 img:nth-of-type(2) {
+ width: calc(100% - 30px);
+ height: calc(100% - 30px);
+ position: absolute;
+ top: 15px;
+ left: 15px;
+}
+.M57:hover .inM57 img:nth-of-type(2) {filter: blur(30px); opacity: 0; transform: scale(2);}
+@font-face {font-family: 'Shantty'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/fa619b4367916ca887cb89316bb33473071ec77a/Shantty.ttf');}
+.naM57 {
+ position: absolute;
+ width: calc(100% - 200px);
+ top: 120px;
+ right: 0;
+ font: 10px arial;
+ padding-left: 30px;
+ text-align: justify;
+}
+.naM57 span {
+ display: block;
+ text-align: right;
+ border-bottom: 1px solid;
+ font: 45px/35px Shantty;
+ margin-left: -48px;
+}
+.miM57 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM57:hover {
+letter-spacing: 5px;
+}
+
+
+
