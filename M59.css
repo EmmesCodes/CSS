@@ -4,7 +4,7 @@
 @font-face {font-family: 'Righthand'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/c075405f15e5866d00c3d8adc15471116bc2013b/righthand-personal.ttf');}
 .M59 {
  width: 300px;
- margin: auto;
+ margin: 0 auto 30px;
  padding: 20px;
  box-shadow: 2px 2px 5px #000000e6;
  font: 10px arial;
