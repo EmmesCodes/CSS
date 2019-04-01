@@ -1,0 +1,62 @@
+.M60, .M60 * {
+ box-sizing: border-box;
+}
+@font-face {font-family: 'Slant'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/fa619b4367916ca887cb89316bb33473071ec77a/Latter%20Slant%20-%20Regular%20TTF.ttf');}
+@font-face {font-family: 'Coves'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/22edb3d6d0d1295fbbbddbb47cb8fed1c7724b80/Coves%20Light.otf');}
+.M60 {
+ width: 300px;
+ background: #FFF;
+ margin: auto;
+ padding: 30px;
+ text-align: center;
+ font: 10px Coves;
+ letter-spacing: 1px;
+ position: relative;
+}
+.M60 img {
+ height: 80px;
+ margin-bottom: 10px;
+}
+.M60 b {
+ font: 20px/30px Slant;
+display: block;
+ margin-bottom: 10px;
+}
+.M60::before, .M60::after {
+ content: "";
+ position: absolute;
+ border-left: 20px solid #FFF;
+ border-right: 20px solid #FFF;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%) translateY(-50%);
+ animation: blur 2s infinite;
+ box-sizing: border-box;
+}
+.M60::before {
+ width: calc(100% + 60px);
+ height: calc(100% - 40px);
+ animation-delay: .5s;
+}
+.M60::after {
+ width: calc(100% + 120px);
+ height: calc(100% - 80px);
+}
+@keyframes blur {
+ from {
+width: calc(100%);
+ }
+ to {
+ width: calc(100% + 200px);
+ opacity: 0;
+ }
+}
+.miM60 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM60:hover {
+letter-spacing: 5px;
+}
