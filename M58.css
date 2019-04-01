@@ -1,0 +1,58 @@
+.M58, .M58 * {
+ box-sizing: border-box;
+}
+.M58 {
+ width: 400px;
+ margin: auto;
+ border: 2px solid;
+ padding: 10px;
+ position: relative;
+}
+.M58 img {
+ width: 100px;
+ height: 100px;
+}
+.tM58 {
+ border-left: 2px solid;
+ display: inline-block;
+ vertical-align: top;
+ margin-left: 10px;
+ margin-top: 10px;
+ padding: 10px;
+ height: 80px;
+ overflow: auto;
+ width: calc(100% - 110px);
+ font: 10px PT Sans;
+}
+.tM58 b {
+ display: block;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+}
+.eM58 {
+ position: absolute;
+ bottom: -15px;
+ font-size: 15px;
+ text-align: center;
+ width: 100%;
+ left: 0;
+ perspective: 800px;
+ transform-style: preserve-3d;
+}
+.eM58 a {
+ background: #FFF;
+ padding: 5px;
+ border: 2px solid;
+ transform: rotate(-45deg) scale(.6);
+ transition: .5s;
+}
+.eM58 a:hover {
+ transform: rotate(-45deg) scale(1);
+}
+.eM58 a::before {
+ transform: rotate(45deg);
+}
+.eM58 a:last-of-type {
+ float: right;
+ margin-left: -30px;
+}
