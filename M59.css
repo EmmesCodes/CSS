@@ -1,0 +1,65 @@
+.M59, .M59 * {
+ box-sizing: border-box;
+}
+@font-face {font-family: 'Righthand'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/c075405f15e5866d00c3d8adc15471116bc2013b/righthand-personal.ttf');}
+.M59 {
+ width: 300px;
+ margin: auto;
+ padding: 20px;
+ box-shadow: 2px 2px 5px #000000e6;
+ font: 10px arial;
+clip-path: polygon(-50px 0px, -50px calc(100% + 50px), calc(100% + 50px) calc(100% + 50px), 116.67% 44.24%, calc(100% - 40px) 0%);
+text-align: justify;
+ perspective: 800px;
+ transform-style: preserve-3d;
+ filter: saturate(0);
+ transition: .5s;
+}
+.M59:hover {
+ filter: saturate(1);
+}
+.M59 img {
+ width: 100%;
+ height: 100%; 
+}
+.M59 a {
+transition: .5s;
+ margin-bottom: -50px;
+ margin-top: 20px;
+ display: inline-block;
+ width: 80px;
+ height: 80px; 
+box-shadow: 2px 2px 5px #000000e6;
+}
+.M59 a:hover {
+ transform: scale(1.2);
+}
+.M59 a:nth-of-type(1) {
+ margin-left: -50px;
+}
+.M59 a:nth-of-type(2) {
+ margin: 0 10px -50px;
+}
+.M59 span {
+ position: relative;
+ display: block;
+ font: 20px Righthand;
+ margin-bottom: 10px;
+}
+.M59 span::after {
+ content: "";
+ border-bottom: 1px solid;
+ width: 50px;
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+}
+.miM59 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM59:hover {
+letter-spacing: 5px;
+}
