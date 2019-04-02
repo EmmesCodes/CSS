@@ -1,0 +1,53 @@
+.M64, .M64 * {
+ box-sizing: border-box;
+transition: .5s;
+}
+.M64 > *:hover {
+ transform: scale(1.3);
+}
+.M64 {
+ width: 360px;
+ position: relative;
+ margin: auto;
+ perspective: 800px;
+transform-style: preserve-3d;
+}
+.M64 a:first-of-type {
+ position: absolute;
+ top: 0px;
+ left: 5px;
+ width: 45px;
+ height: calc(100% - 95px);
+ box-shadow: 2px 2px 5px #0009;
+}
+.inM64 {
+ margin: 5px 5px 5px 60px;
+ box-shadow: 2px 2px 5px #0009;
+ padding: 20px;
+ font: 10px Ageo;
+ letter-spacing: 1px;
+text-align: justify;
+}
+.inM64 b {
+ font: 25px Chopin;
+ display: block;
+}
+.M64 img {
+ width: 80px;
+ height: 80px;
+ margin: 5px;
+ box-shadow: 2px 2px 5px #0009;
+ vertical-align: top;
+}
+.miM64 {
+ font: 10px/15px Ageo !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+ letter-spacing: 2px;
+}
+.miM64:hover {
+letter-spacing: 5px;
+}
+@font-face {font-family: 'Ageo'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/b01ed20b122b1d952a9788b7a22161fdf92da038/AgeoPersonalUse-Medium.otf');}
+@font-face {font-family: 'Chopin'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/b01ed20b122b1d952a9788b7a22161fdf92da038/Chopin.otf');}
