@@ -1,0 +1,81 @@
+.M65, .M65 * {
+ box-sizing: border-box;
+}
+@font-face {font-family: 'Space'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/3c27f55a7757d2798c0781f72eab65d52a720b32/Space%20Craft.ttf');}
+@font-face {font-family: 'Thinfont'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/3c27f55a7757d2798c0781f72eab65d52a720b32/thinfont-thin.ttf');}
+
+.M65 {
+ width: fit-content;
+ width: -moz-fit-content;
+ margin: auto;
+}
+.M65 img {
+ display: block;
+}
+.tM65 { 
+ padding: 20px;
+ position: relative;
+ text-align: center;
+ overflow: hidden;
+}
+.tM65 b {
+ position: relative;
+ z-index: 5;
+ font: 30px Thinfont;
+ letter-spacing: 5px;
+}
+.tM65 i {
+ position: absolute;
+ font: 70px Space;
+ transform: rotate(-10deg);
+ right: -10px;
+ bottom: -20px;
+ -webkit-background-clip: text !important;
+ color: transparent;
+ text-shadow: none;
+}
+@keyframes blink {
+ 78% {
+ color: inherit;
+ text-shadow: inherit;
+ }
+ 79%{
+ color: #333;
+ }
+ 80% {
+ 
+ text-shadow: none;
+ }
+ 81% {
+ color: inherit;
+ text-shadow: inherit;
+ }
+ 82% {
+ color: #333;
+ text-shadow: none;
+ }
+ 83% {
+ color: inherit;
+ text-shadow: inherit;
+ }
+ 92% {
+ color: #333;
+ text-shadow: none;
+ }
+ 92.5% {
+ color: inherit;
+ text-shadow: inherit;
+ }
+}
+.tM65 b:nth-of-type(2), .tM65 b:nth-of-type(5), .tM65 b:nth-of-type(6), .tM65 b:nth-of-type(9) {
+ animation: blink linear infinite 2s;
+}
+.miM65 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM65:hover {
+letter-spacing: 5px;
+}
