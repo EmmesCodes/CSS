@@ -1,0 +1,94 @@
+.M67, .M67 * {
+ box-sizing: border-box;
+}
+@font-face {font-family: 'Longest'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/7ac85e11/Typo-Longest%20Regular%20Demo.otf');}
+.M67 {
+ position: relative;
+ margin: 10px auto 20px;
+ text-align: center;
+}
+.M67 b {
+ position: absolute;
+ height: 100%;
+ border-left: 1px solid;
+ top: 0;
+ animation: luz linear 20s infinite, ojo 10s infinite;
+}
+.M67 > img {
+ width: 100%;
+min-width: 100%; 
+}
+.M67 div {
+ position: absolute;
+ top: 0;
+ left: 0;
+ overflow: hidden;
+ width: 0%;
+ animation: scan linear 40s infinite, ojo 5s infinite;
+}
+.M67 div img {
+ animation: imscan linear 40s infinite;
+}
+@keyframes scan {
+ 0% {width: 0%;}
+ 50% {width: 100%;left: 0;}
+ 100% {width: 0%;left: 100%;}
+}
+@keyframes imscan {
+ 50% {float: inherit;}
+ 50.01% {float: right;}
+ 100% {float: right;}
+}
+@keyframes ojo {
+ 10% {opacity: 1;}
+ 12% {opacity: 0;}
+ 14% {opacity: 1;}
+ 
+ 18% {filter: brightness(1) contrast(1);}
+ 20% {filter: brightness(1.5) contrast(2);}
+ 22% {filter: brightness(1) contrast(1);}
+ 
+ 30% {opacity: 1;}
+ 32% {opacity: 0;}
+ 34% {opacity: 1;}
+ 
+ 70% {opacity: 1;}
+ 72% {opacity: 0;}
+ 74% {opacity: 1;}
+ 
+ 75% {filter: brightness(1) contrast(1);}
+ 77% {filter: brightness(1.5) contrast(2);}
+ 79% {filter: brightness(1) contrast(1);}
+ 
+ 80% {opacity: 1;}
+ 82% {opacity: 0;}
+ 84% {opacity: 1;}
+ 
+ 98% {filter: brightness(1) contrast(1);}
+ 100% {filter: brightness(1.5) contrast(2);}
+}
+@keyframes luz {
+ from {left: 0%;}
+ to {left: 100%;}
+}
+.M67 a {
+ font: 40px/36px Longest;
+ position: absolute;
+ white-space: nowrap;
+ bottom: -13px;
+ left: 50%;
+ transform: translateX(-50%);
+ letter-spacing: 2px;
+ border-bottom: 2px solid;
+ padding: 0 10px;
+ transition: .5s;
+}
+.miM67 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM67:hover, .M67 a:hover {
+letter-spacing: 5px;
+}
