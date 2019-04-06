@@ -1,0 +1,123 @@
+.M66, .M66 * {
+ box-sizing: border-box;
+}
+@font-face {font-family: 'Thinfon'; src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/b01ed20b122b1d952a9788b7a22161fdf92da038/thinfon-bold.otf');}
+.M66 {
+ width: -moz-fit-content;
+ width: fit-content;
+ margin: auto;
+ position: relative;
+ border: 10px solid transparent; 
+}
+.M66 div:first-of-type {
+ position: relative;
+ overflow: hidden;
+ height: 180px;
+ width: -moz-fit-content;
+ width: fit-content;
+ border-radius: 100px 0px;
+}
+.M66 div:first-of-type img {
+ animation: toup 20s infinite alternate, ojo 5s infinite;
+}
+.M66:hover div:first-of-type img {
+ animation-play-state: paused;
+}
+@keyframes toup {
+ 0% {transform: translateY(0%);
+ margin-top: 0px;}
+ 5% {transform: translateY(-10%);
+ margin-top: 20px;}
+ 20% {transform: translateY(-30%);
+ margin-top: 55px;}
+ 22% {transform: translateY(-28%);
+ margin-top: 55px;}
+50% {transform: translateY(-50%);
+ margin-top: 80px;}
+ 60% {transform: translateY(-50%);
+ margin-top: 30px;}
+ 70% {transform: translateY(-70%);
+ margin-top: 110px;}
+ 100% {
+ transform: translateY(-100%);
+ margin-top: 160px;
+}
+}
+@keyframes ojo {
+ 10% {opacity: 1;}
+ 12% {opacity: 0;}
+ 14% {opacity: 1;}
+ 
+ 18% {filter: brightness(1) contrast(1);}
+ 20% {filter: brightness(1.5) contrast(2);}
+ 22% {filter: brightness(1) contrast(1);}
+ 
+ 30% {opacity: 1;}
+ 32% {opacity: 0;}
+ 34% {opacity: 1;}
+ 
+ 70% {opacity: 1;}
+ 72% {opacity: 0;}
+ 74% {opacity: 1;}
+ 
+ 75% {filter: brightness(1) contrast(1);}
+ 77% {filter: brightness(1.5) contrast(2);}
+ 79% {filter: brightness(1) contrast(1);}
+ 
+ 80% {opacity: 1;}
+ 82% {opacity: 0;}
+ 84% {opacity: 1;}
+ 
+ 98% {filter: brightness(1) contrast(1);}
+ 100% {filter: brightness(1.5) contrast(2);}
+}
+.M66 div:nth-of-type(2) {
+ position: absolute;
+ top: calc(50% - 40px);
+ left: -45px;
+ z-index: 2;
+ padding: 10px 20px 0 50px;
+ height: 80px;
+ border-radius: 40px;
+ text-align: justify;
+ transition: 1s;
+ font: 10px/10px arial;
+ width: 80px;
+ overflow: hidden;
+}
+.M66 div:nth-of-type(2):hover {
+ width: calc(100% + 90px);
+}
+.M66 div:nth-of-type(2) img {
+ border-radius: 50%;
+ position: absolute;
+ padding: 5px;
+ height: 80px;
+ width: 80px;
+ min-width: 80px;
+ top: 0;
+ left: 0;
+}
+.M66 div:nth-of-type(2) span {
+ display: block;
+ margin-left: 40px;
+ float: right;
+}
+.M66 div:nth-of-type(2) b {
+ display: block;
+ border-bottom: 1px solid;
+ font: 20px Thinfon;
+ text-align: right;
+ padding-top: 5px;
+ margin: 0 0 3px -15px;
+ letter-spacing: 3px;
+}
+.miM66 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM66:hover {
+ letter-spacing: 5px;
+}
