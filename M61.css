@@ -11,21 +11,22 @@
  font: 12px arial;
 }
 .M61 b {
- display: block;
- -webkit-background-clip: text;
- color: transparent;
- font: bold 200px Facunda;
- margin: -65px 0 -115px 0;
- background-position: center;
- animation: zoom 20s linear infinite alternate;
+    display: block;
+    -webkit-background-clip: text;
+    color: transparent;
+    font: bold 200px/110px Facunda;
+    margin: 0 0 -115px 0;
+    background-position: center;
+    animation: zoom 20s linear infinite alternate;
+    padding-bottom: 50px;
 }
 .M61 span {
  font: 50px Ortisan;
  text-shadow: 2px 2px 2px #000;
 }
 @keyframes zoom {
- from {background-size: auto 300px;}
- to {background-size: auto 150px;}
+ from {background-size: auto 250px;}
+ to {background-size: auto 160px;}
 }
 .M61 a {
  border: 3px solid;
