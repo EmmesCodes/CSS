@@ -17,15 +17,15 @@
  font: bold 200px Facunda;
  margin: -65px 0 -115px 0;
  background-position: center;
- animation: zoom 10s linear infinite alternate;
+ animation: zoom 20s linear infinite alternate;
 }
 .M61 span {
  font: 50px Ortisan;
  text-shadow: 2px 2px 2px #000;
 }
 @keyframes zoom {
- from {background-size: 400px auto;}
- to {background-size: 600px auto;}
+ from {background-size: auto 300px;}
+ to {background-size: auto 150px;}
 }
 .M61 a {
  border: 3px solid;
