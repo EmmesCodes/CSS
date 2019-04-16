@@ -25,7 +25,7 @@
  text-shadow: 2px 2px 2px #000;
 }
 @keyframes zoom {
- from {background-size: auto 250px;}
+ from {background-size: auto 230px;}
  to {background-size: auto 160px;}
 }
 .M61 a {
