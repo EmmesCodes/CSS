@@ -15,9 +15,7 @@
  -webkit-background-clip: text;
  color: transparent;
  font: bold 200px Facunda;
- -webkit-text-stroke: 1px #000000E6;
  margin: -65px 0 -115px 0;
- background-size: auto 200px;
  background-position: center;
  animation: zoom 10s linear infinite alternate;
 }
@@ -26,8 +24,8 @@
  text-shadow: 2px 2px 2px #000;
 }
 @keyframes zoom {
- from {background-size: auto 200px;}
- to {background-size: auto 400px;}
+ from {background-size: auto 400px;}
+ to {background-size: auto 200px;}
 }
 .M61 a {
  border: 3px solid;
@@ -41,6 +39,7 @@
  transition: .5s;
  height: 16px;
  line-height: 10px;
+ background: #FFF9;
 }
 .M61 a:hover {
  font-size: 10px;
