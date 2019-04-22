@@ -1,3 +1,6 @@
+.M76, .M76 *, .M76 *::after, .M76 *::before {
+ box-sizing: border-box;   
+}
 .M76 {
  width: 400px;
  margin: auto;
