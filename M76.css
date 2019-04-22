@@ -1,0 +1,373 @@
+.M76 {
+ width: 400px;
+ margin: auto;
+ transform-style: preserve-3d;
+ perspective: 800px;
+}
+.inM76:nth-of-type(1) {
+ position: absolute;
+ left: calc(50% - 150px);
+ tra-nsform: rotateY(20deg) scale(.89) translateX(-12px);
+ box-shadow: inset 0 0 10px #000;
+ border-radius: 30px;
+}
+.inM76 {
+ width: 300px;
+ padding: 20px 10px;
+ margin: auto;
+ border-radius: 25px;
+ tran-sform: rotateY(20deg) scale(.9);
+ transition: 1s;
+ position: relative;
+ height: 540px;
+ box-shadow: inset 80px 0 100px -50px #FFF9;
+}
+.M76:hover .inM76:nth-of-type(2) {
+ box-shadow: none;
+}
+.inM76::before, .inM76::after {
+ content: "";
+ width: 3px;
+ height: 100px;
+ position: absolute;
+ right: -3px;
+ top: 50px;
+ box-shadow: inset 5px 0 2px -5px #000, inset 3px 0;
+}
+.inM76::after {
+ height: 50px;
+ top: 160px;
+}
+.M76:hover .inM76 {
+ transform: rotateY(0) scale(1) translateX(0px);
+}
+.panM76 {
+ background: #FFF;
+ height: 500px;
+ border-radius: 5px;
+ position: relative;
+}
+.panM76::before {
+ transition: 1s;
+ content: "";
+ position: absolute;
+ height: 15px;
+ width: 150px;
+ border-radius: 0 0 15px 15px;
+ left: calc(50% - 75px);
+ box-shadow: inset 125px 0 100px -150px #FFF9, inset 0 0 0 20px;
+z-index: 10;
+ top: -1px;
+}
+.M76:hover .panM76::before {
+ box-shadow: inset 125px 0 100px -150px #FFF0, inset 0 0 0 20px;
+}
+.panM76::after {
+ content: "";
+ width: 70px;
+ height: 5px;
+ position: absolute;
+ left: calc(50% - 35px);
+ top: -2px;
+ background: #0009;
+ border-radius: 5px;
+ box-shadow: 1px 1px 0 1px #FFF6, 0 0 0 2px #0000004d;
+ z-index: 11;
+}
+.fonM76 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-position: center;
+ box-shadow: inset 150px 0 100px -150px #FFF, inset 0 0 100px 120px #0009;
+ transition: 1s;
+ border-radius: 5px;
+ right: 0;
+ z-index: 2;
+}
+.M76:hover .fonM76 {
+ box-shadow: inset 125px 0 100px -150px #FFF0, inset 0 0 100px 120px #0009;
+}
+.M76:hover .inM76:hover .fonM76 {
+ box-shadow: inset 125px 0 100px -150px #FFF0, inset 0 0 100px -100px #0009;
+}
+.panM76 input {
+ display: none;
+}
+.panM76 label {
+ position: absolute;
+ width: 70px;
+ height: 70px;
+ border: 2px solid;
+ bottom: 100px;
+ z-index: 3;
+ left: calc(50% - 35px);
+ color: #FFF;
+ border-radius: 50%;
+ background: #0009;
+ text-align: center;
+ font-size: 30px;
+ padding-top: 15px;
+ opacity: .7;
+ transition: 1s;
+}
+.panM76 label:hover {
+ opacity: 1;
+}
+.panM76 input:checked ~ .fonM76 {
+ width: 0;
+}
+.panM76 input:checked ~ label {
+ left: 38px;
+ bottom: calc(100% - 18px);
+ border: none;
+ background: transparent;
+ font-size: 12px;
+ padding-top: 0;
+ height: 15px;
+ width: 15px; 
+ animation: block .5s infinite alternate;
+}
+@keyframes block {
+ from {color: inherit;
+ transform: rotate(10deg);}
+ to {color: #FFF;transform: rotate(-10deg);}
+}
+.hoM76 {
+ position: absolute;
+ color: #FFF;
+ top: 90px;
+ width: 100%;
+ text-align: center;
+ font: 60px/90% BenchNine;
+ transition: 1s;
+ right: 0;
+ z-index: 2;
+}
+.hoM76 span {
+ font: 12px Montserrat; 
+ transition: 1s;
+}
+.panM76 input:checked ~ .hoM76 span {
+ font-size: 0px;
+}
+.panM76 input:checked ~ .hoM76 {
+ letter-spacing: 1px;
+ width: 20%;
+ top: 3px;
+ right: -10px;
+ font-size: 14px;
+}
+.bomM76 {
+ border-top: 20px solid #0006;
+ border-radius: 5px;
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ overflow: hidden;
+ position: relative;
+ z-index: 0;
+}
+.nomM76 {
+ position: relative;
+ padding: 20px 30px 20px 140px;
+ margin-top: 20px;
+}
+.nomM76 img {
+ width: 80px;
+ height: 80px; 
+ box-shadow: 2px 2px 5px #0006;
+ border-radius: 50%;
+ position: absolute;
+ left: 40px;
+ top: 30px;
+}
+.nomM76::before {
+ content: "";
+ background: linear-gradient(45deg, #666, #222, #666);
+ position: absolute;
+ left: 30px;
+ top: 20px;
+ width: 100px;
+ height: 100px;
+ border-radius: 50px 50px 50px 0;
+ transform: rotate(-45deg);
+ box-shadow: 0px 2px 5px #000;
+}
+.nomM76 b {
+ font: 30px/22px BenchNine;
+ letter-spacing: -1px;
+ padding-top: 45px;
+ display: inline-block;
+}
+.nomM76 span {
+ font: 10px/12px Montserrat;
+ color: #999;
+}
+.menM76 {
+ padding: 30px 10px 0;
+ font: 10px Montserrat;
+ border-bottom: 12px solid;
+ margin: 0 30px;
+ background: linear-gradient(#0000 60%, #0009);
+}
+.menM76 b {
+ font-size: 16px;
+ line-height: 30px;
+ border-bottom: 2px solid;
+ display: inline-block;
+ margin-bottom: 6px;
+}
+.menM76 div {
+ margin: 4px 0 -16px;
+}
+.menM76 audio {
+ transform: scale(.6);
+ height: 20px;
+ width: 368px;
+ margin-left: -84px;
+}
+
+.appM76 br, .scM76 br {
+ display: none;
+}
+.appM76 {
+ position: absolute;
+ bottom: 40px;
+ left: 0;
+ width: 100%;
+ text-align: center;
+}
+.appM76 a, .sonM76 span {
+ padding: 5px;
+ box-shadow: inset 0 0 0 -2px #FF385B;
+ color: #DDD;
+ text-shadow: 1px 1px 2px #0009;
+ transition: .5s;
+ background: linear-gradient(#222, #666);
+ border-radius: 50%;
+ vertical-align: middle;
+ margin: 0 -3px;
+ position: relative;
+}
+.appM76 a:nth-of-type(odd)::before {
+ font-size: 25px;
+ padding: 20px;
+}
+.appM76 a:hover, .sonM76 span:hover {
+ box-shadow: inset 0 0 0 30px #FF385B; 
+ z-index: 2;
+}
+.appM76 a::before, .sonM76 span:before {
+ background: #222;
+ padding: 10px;
+ border-radius: 50%;
+ font-size: 15px;
+ box-shadow: 1px 1px 2px #0009;
+ margin: 3px;
+}
+.tacM76 {
+ position: absolute;
+ width: 100%;
+ top: calc(100% - 20px);
+ text-align: center;
+ height: 100%;
+ transition: 1s;
+ padding-top: 20px;
+}
+.tacM76:hover {
+top: -21px;
+}
+.tacM76::before {
+ content: "";
+ border-top: 6px solid #666;
+ width: 60px;
+ position: absolute;
+ border-left: 30px solid transparent;
+ border-right: 30px solid transparent;
+ left: calc(50% - 30px);
+ top: 0;
+ transition: .5s;
+}
+.tacM76:hover::before {
+ opacity: 0;
+}
+.tacM76 .menM76 {
+ margin: 0px;
+ background: #000C;
+ text-align: left;
+ padding: 30px;
+ border: none;
+}
+.tacM76 .menM76 b {
+ display: block;
+}
+.tacM76 .menM76 b:before {
+ content: "\eb9c";
+ font: 16px/30px honeybee;
+ float: right;
+ color: #DDD;
+}
+.scM76 {
+ overflow: auto;
+ height: 381px;
+ padding-right: 5px;
+ font: 20px BenchNine;
+ mix-blend-mode: normal !important;
+ margin-bottom: 1px !important;
+}
+.scM76 img {
+ width: 50px;
+ height: 50px;
+ vertical-align: middle;
+ margin-right: 5px;
+ clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0 0);
+}
+.scM76 a {
+ display: block;
+ margin: 0 0 10px 25px;
+ transition: .5s;
+ background-image: linear-gradient(45deg, #222 50%, #444);
+ color: #DDD !important;
+}
+.scM76 a:nth-of-type(even) {
+ margin: 0 0 10px 35px;
+}
+ .scM76 a:hover {
+ background-image: linear-gradient(45deg, #222 50%, #333);
+ margin: 0 0 10px 0px;
+}
+.batM76:before, .batM76:after {
+ font: 12px honeybee;
+}
+.batM76:before {
+ content: "\e92e";
+}
+.batM76:after {
+ content: "\ebae";
+}
+.batM76 {
+ position: absolute;
+ top: 2px;
+ z-index: 1;
+ color: #DDD;
+ left: 5px;
+ letter-spacing: 5px;
+}
+.miM76 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+ margin-top: 20px;
+}
+.miM76:hover {
+letter-spacing: 5px;
+}
+.M76 div::-webkit-scrollbar {
+ width: 3px !important;
+ background: #0006 !important;
+}
+.M76 div::-webkit-scrollbar-thumb {
+ background: #0006 !important;
+}
