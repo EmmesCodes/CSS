@@ -1,0 +1,381 @@
+.M77,
+.M77 *,
+.M77 *::after,
+.M77 *::before {
+    box-sizing: border-box;
+}
+.M77 {
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    box-shadow: 5px 5px 20px -10px #0009;
+}
+.M77 > i {
+    background: #FFF;
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    border: 1px solid;
+    border-top: 0px;
+    top: 10px;
+    z-index: 5;
+    left: calc(50% - 50px);
+    border-radius: 0 0 3px 3px;
+}
+.M77 > i::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border: 2px solid;
+    left: calc(50% - 20px);
+    top: -1px;
+    border-radius: 5px;
+}
+.paM77 {
+    border: 1px solid;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.blM77 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    transition-duration: 1s;
+    z-index: 2;
+}
+.M77:hover .blM77 {
+    left: 100%;
+    transition-delay: .5s;
+}
+.blM77 div {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    position: absolute;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+.blM77 div span {
+    font-size: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    transform: rotate(-45deg);
+    transition: .5s
+}
+.blM77 div::before,
+.blM77 div::after {
+    content: "";
+    position: absolute;
+    border-top: 20px solid;
+    height: 100%;
+    width: 100%;
+    border-left: 20px solid;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+.blM77 div:before {
+    top: 10px;
+    left: 10px;
+}
+.blM77 div::after {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+.M77:hover .blM77 div:before {
+    top: -50px;
+    left: -50px;
+    opacity: 0;
+    transition-delay: 0s;
+}
+.M77:hover .blM77 div:after {
+    bottom: -50px;
+    right: -50px;
+    opacity: 0;
+    transition-delay: 0s;
+}
+.M77:hover .blM77 div {
+    filter: blur(20px);
+    opacity: 0;
+}
+.M77:hover .blM77 div span {
+    transform: rotate(-45deg) scale(3);
+}
+.miM77 {
+    font: 10px/15px arial !important;
+    display: block;
+    text-align: center;
+    transition: .5s;
+}
+.miM77:hover {
+    letter-spacing: 5px;
+}
+.M77 div::-webkit-scrollbar {
+    width: 3px !important;
+    background: #0006 !important;
+}
+.M77 div::-webkit-scrollbar-thumb {
+    background: #0006 !important;
+}
+.icosM77 {
+    background: #ffffffe6;
+    text-align: right;
+    font: 10px/15px Oswald;
+    letter-spacing: 2px;
+}
+.icosM77:before {
+    content: "\ebae ";
+}
+.icosM77:after {
+    content: "\e92d ";
+}
+.icosM77:before,
+.icosM77:after {
+    font-family: honeybee;
+}
+.hiM77 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+}
+.proM77 {
+    position: relative;
+    box-shadow: inset 0 0 0 200px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.proM77:nth-of-type(1) img,
+.proM77:before {
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.proM77:nth-of-type(1) {
+    padding-left: 90px;
+}
+.proM77:nth-of-type(1)::before {
+    content: "";
+    mix-blend-mode: normal;
+    background: #FFF;
+    height: 0px;
+    transition: .5s;
+}
+.proM77:hover::before {
+    height: 70px;
+}
+.proM77 i {
+    font: 20px/31px Oswald;
+    color: #777;
+}
+.proM77 span {
+    font: 10px/13px Source Sans Pro;
+    display: inline-block;
+    padding-left: 13px;
+    color: #777;
+}
+.proM77 span::before {
+    position: absolute;
+    margin: 3px 0 0 -13px;
+    font-size: 9px;
+}
+@keyframes alert {
+    from {
+        margin-left: 250px;
+    }
+    to {
+        margin-left: -250px;
+    }
+}
+.proM77:nth-of-type(2) i,
+.proM77.en i {
+    display: block;
+    width: 100%;
+    animation: alert 10s linear infinite;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 8px;
+}
+.proM77:nth-of-type(2) span {
+    padding: 0;
+    transition: .5s;
+    letter-spacing: 1px;
+    line-height: 0px;
+    text-align: center;
+    margin: 14px 0 -25px;
+    border-top: 1px solid;
+}
+.proM77:nth-of-type(2):hover span {
+    padding: 5px 0 0;
+    margin: 10px 0 0;
+    line-height: 11px;
+}
+.proM77:nth-of-type(3) i::before {
+    content: "\eb9b";
+    font-family: honeybee;
+    float: right;
+}
+.proM77:nth-of-type(3) {
+    height: 50px;
+    transition: .5s;
+}
+.proM77:nth-of-type(3):hover {
+    height: 206px;
+}
+.conM77 {
+    text-align: right;
+    overflow: auto;
+    height: 150px;
+    margin-top: 6px;
+}
+.conM77 br,
+.reM77 br {
+    display: none;
+}
+.conM77 img {
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(100% 0, 100% 65%, 65% 100%, 0 100%, 0 0);
+}
+.conM77 a {
+    display: inline-block;
+    margin: 3px;
+    background: #FFF;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.conM77 a:hover {
+    background: #777;
+    transform: rotate(-5deg);
+}
+.reM77 {
+    width: 90%;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    word-spacing: -1px;
+    text-align: center;
+}
+.reM77 a {
+    display: inline-block;
+    padding: 16px;
+    font-size: 40px;
+    color: #FFF !important;
+    text-shadow: 1px 1px #0003, -1px 1px #0003, 1px -1px #0003, -1px -1px #0003;
+}
+.reM77 a:nth-of-type(2) {
+    margin: 0 10px;
+}
+.reM77 a::before {
+    transition: .5s;
+    transform: scale(.8);
+    display: block;
+}
+.reM77 a:hover:before {
+    transform: scale(1);
+}
+/***MENSAJES***/
+
+.proM77.en:before {
+    display: none;
+}
+.proM77.en {
+    padding: 10px !important;
+}
+.proM77.xx img {
+    width: 50px;
+    height: 50px;
+}
+.proM77.xx b {
+    font: 20px/20px Oswald;
+    color: #777;
+    display: inline-block;
+    background: #FFF;
+    width: calc(100% - 65px);
+    vertical-align: top;
+    height: 50px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+    position: relative;
+}
+.proM77.xx sub {
+    font: 10px/15px Source Sans Pro;
+}
+.proM77.xx b::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #FFF;
+    border-radius: 3px;
+    border-left: 1px solid #DDD;
+    transform: rotate(-45deg);
+    top: calc(50% - 7px);
+    left: -8px;
+    border-top: 1px solid #DDD;
+}
+.saM77 {
+    font: 14px/15px Source Sans Pro;
+    color: #777;
+    background: #FFFFFFE6;
+    margin-top: 10px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 10px;
+    max-height: 270px;
+    overflow: auto;
+}
+.baM77 {
+    position: absolute;
+    top: 415px;
+    height: 50px;
+    width: 100%;
+}
+.baM77 .th-chevron-left {
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+}
+.baM77 .th-pencil {
+    margin-left: 10px;
+    vertical-align: top;
+    width: calc(100% - 60px);
+    font: 20px/20px Oswald;
+    position: relative;
+    padding: 15px 50px 15px 15px;
+}
+.baM77 .th-pencil::before {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.baM77 a {
+    transition: .5s;
+    color: #777 !important;
+}
+.baM77 a:hover {
+    filter: contrast(2) brightness(1.2);
+}
