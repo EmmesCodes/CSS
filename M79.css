@@ -1,0 +1,262 @@
+.M79,
+ .M79 *,
+ .M79 *:before,
+ .M79 *:after {
+     box-sizing: border-box;
+ }
+ .M79 {
+     padding: 50px;
+ }
+ .poM79 {
+     margin: 0 150px;
+     transform-style: preserve-3d;
+     perspective: 800px;
+ }
+ .inM79 {
+     position: relative;
+     transform-style: preserve-3d;
+     perspective: 800px;
+     height: 550px;
+     transition: 1s;
+ }
+ .M79:hover .inM79 {
+     transform: rotateY(35deg);
+ }
+ .M79:hover .poM79:hover .inM79 {
+     transform: rotateY(-35deg) !important;
+ }
+ .paM79 {
+     width: 300px;
+     height: 550px;
+     border: 1px solid;
+     border-radius: 10px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ .paM79.bb {
+     width: 280px;
+     height: 530px;
+     border-radius: 3px;
+     clip-path: polygon(80px 2px, calc(100% - 80px) 2px, calc(100% - 80px) 0, 100% 0, 100% 100%, 0 100%, 0 0, 80px 0);
+ }
+ .auM79,
+ .boM79,
+ .noM79,
+ .imM79,
+ .imM79:before,
+ .imM79:after,
+ .imM79 b::before,
+ .imM79 b::after,
+ .exM79,
+ .imM79.txt,
+ .txtM79,
+ .lineM79,
+ .lineM79::before,
+ .resM79 {
+     left: 50%;
+     transform: translateX(-50%);
+     position: absolute;
+     border: 1px solid;
+ }
+ .auM79 {
+     width: 120px;
+     top: 10px;
+     height: 10px;
+     border-top: 0px;
+     border-radius: 0 0 3px 3px;
+ }
+ .boM79 {
+     width: 50px;
+     height: 6px;
+     border-radius: 1px;
+     top: 7px;
+ }
+ .noM79 {
+     border: none;
+     font: 30px/35px Gugi;
+     color: #111;
+     text-align: center;
+     top: 225px;
+     transform: translateX(-50%) translateZ(50px);
+     letter-spacing: 2px;
+ }
+ .noM79 span {
+     display: block;
+     font: 15px Roboto;
+     letter-spacing: 20px;
+     padding-left: 20px;
+ }
+ .imM79:before,
+ .imM79:after {
+     content: "";
+ }
+ .imM79 {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     padding: 5px;
+     top: 100px;
+     transform: translateX(-50%) translateZ(35px) !important;
+ }
+ .imM79 img {
+     border-radius: 50%;
+     height: 100%;
+     width: 100%;
+ }
+ .imM79::before,
+ .imM79::after,
+ .imM79 b::before,
+ .imM79 b::after {
+     content: "";
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%) scale(2.5);
+     border-top: 1px solid transparent;
+     border-bottom: 1px solid transparent;
+     animation: sound 4s linear infinite;
+ }
+ .imM79::after {
+     animation-delay: 1s;
+ }
+ .imM79 b::before {
+     animation-delay: 2s;
+ }
+ .imM79 b::after {
+     animation-delay: 3s;
+ }
+ @keyframes sound {
+     0% {
+         opacity: 1;
+         transform: translate(-50%, -50%) scale(1);
+         border-width: 1px;
+     }
+     90% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 0;
+         transform: translate(-50%, -50%) scale(4);
+         border-width: 10px;
+     }
+ }
+ .exM79 {
+     bottom: 70px;
+     border: none;
+     font-size: 20px;
+     transform: translateX(-50%);
+     text-align: center;
+     transform-style: preserve-3d;
+     perspective: 800px;
+     z-index: 10;
+     width: 200px;
+     text-align: center;
+ }
+ .exM79 a {
+     border: 1px solid;
+     color: inherit !important;
+     padding: 15px;
+     margin: 5px;
+     transition: .5s;
+     transform: translateZ(50px);
+     box-shadow: inset 0 0 0 0px;
+ }
+ .exM79 a:hover {
+     transform: translateZ(45px);
+     box-shadow: inset 0 0 0 100px;
+ }
+ .exM79 a:before,
+ .resM79 span {
+     transition: .5s;
+ }
+ .exM79 a:hover:before,
+ .resM79:hover span {
+     color: #111;
+ }
+ .miM79 {
+     font: 10px/15px Roboto !important;
+     display: block;
+     text-align: center;
+     transition: .5s;
+     color: inherit !important;
+ }
+ .miM79:hover {
+     letter-spacing: 5px;
+ }
+ .M79 div::-webkit-scrollbar {
+     width: 3px !important;
+     background: #0006 !important;
+ }
+ .M79 div::-webkit-scrollbar-thumb {
+     background: #0006 !important;
+ }
+ /****MENSAJES****/
+ 
+ .imM79.txt {
+     border: 0px;
+     top: 70px;
+ }
+ .imM79.txt i {
+     font: 25px/25px Gugi;
+     display: block;
+     text-align: center;
+     width: 200px;
+     margin: 20px 0 0 -55px;
+ }
+ .txtM79 {
+     top: 180px;
+     width: 200px;
+     padding: 10px;
+     font: 13px Roboto;
+     border: 0px;
+     height: 250px;
+     overflow: auto;
+     text-align: justify;
+ }
+ .txtM79 b {
+     display: block;
+     margin-bottom: 10px;
+     font-size: 14px;
+ }
+ .txtM79 b span {
+     float: right;
+ }
+ .lineM79 {
+     width: 150px;
+     border-bottom: 0;
+     border-left: 0;
+     border-right: 0;
+     top: 160px;
+     clip-path: polygon(calc(50% - 15px) 1px, calc(50% + 15px) 1px, calc(50% + 15px) 0, 100% 0, 100% 100%, 0 100%, 0 0, calc(50% - 15px) 0);
+     height: 30px;
+     transform: translateX(-50%) translateZ(35px);
+ }
+ .lineM79::before {
+     content: "";
+     width: 25px;
+     height: 25px;
+     border-radius: 0 0 5px;
+     transform: translateX(-50%) rotate(45deg);
+     top: -15px;
+ }
+ .resM79 {
+     transform: translateX(-50%) translateZ(50px);
+     color: inherit !important;
+     padding: 10px;
+     bottom: 75px;
+     font: 20px Gugi;
+     transition: .5s;
+     box-shadow: inset 0 0 0 0;
+     width: 175px;
+ }
+ .resM79:hover {
+     transform: translateZ(45px);
+     transform: translateX(-50%) translateZ(45px);
+     box-shadow: inset 0 0 0 100px;
+ }
+ .resM79 .th {
+     margin-left: 25px;
+ }
