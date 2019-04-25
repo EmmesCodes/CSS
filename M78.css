@@ -1,0 +1,96 @@
+.M78 {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+.inM78 br {
+    display: none;
+}
+.inM78 {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: gira 10s linear infinite;
+}
+.inM78 div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    position: absolute;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 7px;
+    background-clip: content-box !important;
+    box-shadow: 0 0 3px #FFF, inset 0 0 3px #FFF, 0 0 25px, inset 0 0 25px;
+}
+.inM78 div:nth-of-type(1) {
+    transform: rotateX(0deg) translateZ(-75px);
+}
+.inM78 div:nth-of-type(2) {
+    transform: rotateY(90deg) translateZ(-75px);
+}
+.inM78 div:nth-of-type(3) {
+    transform: rotateX(90deg) translateZ(-75px);
+}
+.inM78 div:nth-of-type(4) {
+    transform: rotateX(0deg) translateZ(75px);
+}
+.inM78 div:nth-of-type(5) {
+    transform: rotateY(90deg) translateZ(75px);
+}
+.inM78 div:nth-of-type(6) {
+    transform: rotateX(90deg) translateZ(75px);
+}
+@keyframes gira {
+    from {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    to {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+@keyframes bow {
+    0% {
+        color: #f00;
+    }
+    15% {
+        color: #ff00e2;
+    }
+    30% {
+        color: #0500ff;
+    }
+    50% {
+        color: #00b8ff;
+    }
+    68% {
+        color: #00ff02;
+    }
+    80% {
+        color: #e8ff00;
+    }
+    100% {
+        color: #f00;
+    }
+}
+.noM78 {
+    position: absolute;
+    font: 25px Offside;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 3px #FFF, 0 0 5px, 0 0 5px, 0 0 15px, 5px 5px 10px #000, -5px 5px 10px #000, 5px -5px 10px #000, -5px -5px 10px #000;
+    width: 100%;
+}
+.miM78 {
+ font: 10px/15px arial !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM78:hover {
+letter-spacing: 5px;
+}
