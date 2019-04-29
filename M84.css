@@ -1,0 +1,52 @@
+@font-face {
+ font-family: 'Brandon';
+ src: url('https://cdn.staticaly.com/gh/EmmesCodes/Tipografias/d3850619ea2349f70c4e3f7040a02e5ed116550b/brandon.woff');
+}
+.M84, .M84 * {
+box-sizing: border-box;
+}
+.M84 {
+ border: 1px dotted #DDD;
+ padding: 50px;
+ background: #FFF;
+ width: 500px;
+ margin: auto;
+ font: 12px/20px Montserrat;
+ text-align: justify;
+}
+.ttM84 {
+ text-align: center;
+ padding: 20px 0;
+}
+.ttM84 b {
+ font: 50px/50px Brandon;
+ text-transform: uppercase;
+ color: #FFF;
+ text-shadow: 1px 1px 2px #999;
+}
+.ttM84 i {
+ font: 10px Montserrat;
+ letter-spacing: 10px;
+ padding-left: 10px;
+}
+.ttM84 span {
+ font: italic 10px Montserrat;
+
+}
+.M84 div ~ b {
+ font: bold 15px Indie Flower;
+ letter-spacing: 2px;
+}
+.M84 div ~ center {
+ font: italic 15px Indie Flower;
+ letter-spacing: 2px;
+}
+.miM84 {
+ font: 10px/15px Montserrat !important;
+ display: block;
+ text-align: center;
+ transition: .5s;
+}
+.miM84:hover {
+letter-spacing: 5px;
+}
