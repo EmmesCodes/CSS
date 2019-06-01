@@ -19,11 +19,12 @@
  transform: rotateY(0deg);
 }
 .baM94.aa{
- transform: translateZ(-1px);
+ transform: rotateY(180deg);
  background: #FFF;
+ z-index: 10;
+ backface-visibility: hidden;
 }
 .baM94.aa div {
- transform: rotateY(180deg);
  padding: 20px;
 }
 .baM94.aa div span {
