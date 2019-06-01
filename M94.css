@@ -1,7 +1,6 @@
 .M94, .M94 * {
  transition-duration: 1s;
  box-sizing: border-box; 
-
 }
 .M94, .reveM94 {
  width: 350px;
@@ -14,6 +13,10 @@
 }
 .reveM94 {
  transform: rotateY(180deg);
+ transition-delay: 2s;
+}
+.M94:hover .reveM94 {
+    transition-delay: 0s;
 }
 .M94:hover .reveM94 {
  transform: rotateY(0deg);
