@@ -229,3 +229,10 @@
 .miM94:hover {
 letter-spacing: 5px;
 }
+.M94 div::-webkit-scrollbar {
+ width: 3px !important;
+ background: #0006 !important;
+}
+.M94 div::-webkit-scrollbar-thumb {
+ background: #0006 !important;
+}
