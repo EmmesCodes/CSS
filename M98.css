@@ -1,6 +1,13 @@
  .M98 > br, .conM98 > br, .M98 input {
  display: none;
 }
+.M98 div::-webkit-scrollbar {
+ width: 3px !important;
+ background: #0006 !important;
+}
+.M98 div::-webkit-scrollbar-thumb {
+ background: #0006 !important;
+}
 .M98, .M98 * {
  transition: 1s;
  box-sizing: border-box;
