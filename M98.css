@@ -146,7 +146,7 @@ z-index: 6;
  100% {z-index: inherit;}
 }
 @keyframes port {
- 99% {z-index: inherit;}
+ 99% {z-index: 30;}
  100% {z-index: 0;}
 }
 .porM98.aa > div {
