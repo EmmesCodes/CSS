@@ -60,7 +60,7 @@
 }
 #M98:checked ~ .porM98.aa {
  transform: rotateY(-180deg);
- z-index: 0;
+ animation: port .6s both;
  margin-left: 175px;
 }
 
@@ -144,6 +144,10 @@ z-index: 6;
 @keyframes inhe {
  99% {z-index: 20;}
  100% {z-index: inherit;}
+}
+@keyframes port {
+ 99% {z-index: inherit;}
+ 100% {z-index: 0;}
 }
 .porM98.aa > div {
  height: 100%;
