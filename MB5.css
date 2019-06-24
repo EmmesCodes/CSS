@@ -110,7 +110,7 @@
 .miMB5 {
   display: block;
   text-align: right;
-  color: #c3aa3e;
+  color: #c3aa3e !important;
   text-shadow: 1px 1px 2px #000;
   font: 15px IM Fell English SC;
   margin: 0 -10px -58px;
