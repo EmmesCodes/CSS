@@ -76,7 +76,7 @@
   position: absolute;
   bottom: 5px;
   left: 5px;
-  right: 5px;
+  width: calc(100% - 10px);
 }
 .miMA9 {
   display: block;
