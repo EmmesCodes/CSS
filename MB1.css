@@ -1,0 +1,82 @@
+.MB1.rose  > div:nth-of-type(2),
+.MB1.rose > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/63NX8CvL/003.gif);
+}
+.MB1.red  > div:nth-of-type(2),
+.MB1.red > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/0NSv5Vby/ue8jcVN.gif);
+}
+.MB1.blue  > div:nth-of-type(2),
+.MB1.blue > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/wvcdL35K/BIbANPA.gif);
+}
+.MB1.green  > div:nth-of-type(2),
+.MB1.green > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/zG651sDQ/dsmBTkg.gif);
+}
+.MB1.gold  > div:nth-of-type(2),
+.MB1.gold > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/PJXn4hKC/z66j6QV.gif);
+}
+.MB1.white  > div:nth-of-type(2),
+.MB1.white > div:nth-of-type(3)::after {
+background-image: url(https://i.postimg.cc/6pywgWKR/R4PGWcY.gif);
+}
+.MB1,
+.MB1 * {
+  box-sizing: border-box;
+}
+.MB1 {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  position: relative;
+}
+.MB1 > div:nth-of-type(1) {
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.MB1 > div:nth-of-type(2) {
+  -webkit-mask-image: url(https://i.imgur.com/UEhKliJ.png);
+  position: absolute;
+  -webkit-mask-size: 100% 100%;
+  top: -15px;
+  bottom: -15px;
+  left: -15px;
+  right: -15px;  
+}
+.MB1 > div:nth-of-type(3)::before,
+.MB1 > div:nth-of-type(3)::after {
+  transform: rotate(-10deg);
+  content: attr(title);
+  position: absolute;
+  font: 30px Yessy;
+  bottom: 0px;
+  right: -20px;
+  white-space: nowrap;
+}
+.MB1 > div:nth-of-type(3)::after {
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.MB1 > div:nth-of-type(3)::before {
+  color: #000;
+  font-weight: bold;
+  margin: -3px;
+  text-shadow: -2px 2px 3px;
+}
+@font-face {
+  font-family: Yessy;
+  src: url(https://cdn.statically.io/gh/EmmesCodes/Tipografias/46ff81bf/Yessy.otf);
+}
+.miMB1 {
+  display: block;
+  text-align: center;
+  font: 10px arial;
+  transition: 0.5s;
+}
+.miMB1:hover {
+  letter-spacing: 5px;
+}

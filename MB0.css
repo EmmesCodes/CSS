@@ -1,0 +1,122 @@
+.MA0.rose > div,
+.MA0.rose > div > div > div,
+.MA0.rose a,
+.MA0.rose div div::before {
+background-image: url(https://i.postimg.cc/63NX8CvL/003.gif);
+} 
+.MA0.red > div,
+.MA0.red > div > div > div,
+.MA0.red a,
+.MA0.red div div::before {
+background-image: url(https://i.postimg.cc/0NSv5Vby/ue8jcVN.gif);
+}  
+.MA0.blue > div,
+.MA0.blue > div > div > div,
+.MA0.blue a,
+.MA0.blue div div::before {
+background-image: url(https://i.postimg.cc/wvcdL35K/BIbANPA.gif);
+} 
+.MA0.green > div,
+.MA0.green > div > div > div,
+.MA0.green a,
+.MA0.green div div::before {
+background-image: url(https://i.postimg.cc/zG651sDQ/dsmBTkg.gif);
+} 
+.MA0.gold > div,
+.MA0.gold > div > div > div,
+.MA0.gold a,
+.MA0.gold div div::before {
+background-image: url(https://i.postimg.cc/PJXn4hKC/z66j6QV.gif);
+}
+.MA0.white > div,
+.MA0.white > div > div > div,
+.MA0.white a,
+.MA0.white div div::before {
+background-image: url(https://i.postimg.cc/6pywgWKR/R4PGWcY.gif);
+}
+.MA0,
+.MA0 * {
+  box-sizing: border-box;
+}
+.MA0 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.MA0 > div,
+.MA0 > div > div > div {
+  display: inline-block;
+  transform: rotate(-3deg);
+  margin-left: 25px;
+}
+.MA0 > div > div > div {
+  position: absolute;
+  width: 50px;
+  height: calc(100% + 10px);
+  right: calc(100% + 5px);
+  top: -5px;
+  padding: 5px;
+}
+.MA0 > div > div > div b {
+  display: block;
+  background: #111;
+  height: 100%;
+  transform: rotate(3deg);
+  margin-right: -5px;
+}
+.MA0 > div > div > div b i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.MA0 a {
+  display: block;
+  background-clip: border-box;
+  margin: 2px;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  margin: 15px 0;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+.MA0 a:hover {
+  transform: scale(1);
+}
+.MA0 > div > div {
+  position: relative;
+  background: #111;
+  padding: 5px;
+  line-height: 0;
+  transform: rotate(3deg);
+  margin: 0px 5px 0 -5px;
+}
+.MA0 > div > div::before,
+.MA0 > div > div::after {
+  content: attr(title);
+  position: absolute;
+  font: bold 40px Yessy;
+  bottom: -20px;
+  right: -20px;
+}
+.MA0 div div::before {
+  margin: 2px;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.MA0 div div::after {
+  color: #111;
+}
+@font-face {
+  font-family: Yessy;
+  src: url(https://cdn.statically.io/gh/EmmesCodes/Tipografias/46ff81bf/Yessy.otf);
+}
+.miMA0 {
+  display: block;
+  text-align: center;
+  font: 10px arial;
+  transition: 0.5s;
+}
+.miMA0:hover {
+  letter-spacing: 5px;
+}
