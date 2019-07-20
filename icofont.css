@@ -7,13 +7,11 @@
 */
 
 @font-face
-{
- 
-  font-family: "IcoFont";
+{ 
+font-family: "IcoFont";
 font-weight: normal;
 font-style: "Regular";
-src: url("./fonts/icofont.woff2") format("woff2"),
-url("https://cdn.statically.io/gh/EmmesCodes/Tipografias/e3a45aa5/icofont.ttf") format("woff");
+src: url("https://cdn.statically.io/gh/EmmesCodes/Tipografias/e3a45aa5/icofont.ttf");
 }
 
 [class^="icofont-"], [class*=" icofont-"]
