@@ -6,14 +6,6 @@
 * @license - https://icofont.com/license/
 */
 
-@font-face
-{ 
-font-family: "IcoFont";
-font-weight: normal;
-font-style: "Regular";
-src: url("https://cdn.statically.io/gh/EmmesCodes/Tipografias/e3a45aa5/icofont.ttf");
-}
-
 [class^="icofont-"], [class*=" icofont-"]
 {
   font-family: 'IcoFont' !important;
